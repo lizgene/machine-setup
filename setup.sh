@@ -13,14 +13,11 @@ mkdir ~/.tmp
 mkdir ~/code
 mkdir ~/code/work
 ln -sfn "$(pwd -P)" ~/
-ln -sfn "$(pwd)/.bash_profile" ~
-ln -sfn "$(pwd)/.gitconfig" ~
-ln -sfn "$(pwd)/.gitignore" ~
-ln -sfn "$(pwd)/.gitattributes" ~
-ln -sfn "$(pwd)/.bash-it" ~
-ln -sfn "$(pwd)/.inputrc" ~
-ln -sfn "$(pwd)/.gemrc" ~
-ln -sfn "$(pwd)/.editorconfig" ~
+ln -sfn "$(pwd)/dotfiles/.bash_profile" ~
+ln -sfn "$(pwd)/dotfiles/.gitconfig" ~
+ln -sfn "$(pwd)/dotfiles/.gitignore" ~
+ln -sfn "$(pwd)/dotfiles/.gemrc" ~
+ln -sfn "$(pwd)/dotfiles/.editorconfig" ~
 
 # vim
 ln -sfn "$(pwd)/.vim" ~

@@ -43,10 +43,6 @@ echo "Expand print panel by default"
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 
 echo ""
-echo "Save to disk (not to iCloud) by default"
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
-
-echo ""
 echo "Disable the “Are you sure you want to open this application?” dialog"
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
@@ -379,10 +375,7 @@ defaults write com.apple.reminders RemindersDebugMenu -boolean true
 ###############################################################################
 echo 'Adding Login Items'
 osascript -e 'tell application "System Events" to make new login item at end with properties {path:"/Applications/1password.app", name:"1password", hidden:true}'
-osascript -e 'tell application "System Events" to make new login item at end with properties {path:"/Applications/Alfred 3.app", name:"Alfred", hidden:true}'
-osascript -e 'tell application "System Events" to make new login item at end with properties {path:"/Applications/Bartender 2.app", name:"Bartender", hidden:true}'
 osascript -e 'tell application "System Events" to make new login item at end with properties {path:"/Applications/Dropbox.app", name:"Dropbox", hidden:true}'
-osascript -e 'tell application "System Events" to make new login item at end with properties {path:"/Applications/Flux.app", name:"Flux", hidden:true}'
 osascript -e 'tell application "System Events" to make new login item at end with properties {path:"/Applications/Google Chrome.app", name:"Google Chrome", hidden:true}'
 osascript -e 'tell application "System Events" to make new login item at end with properties {path:"/Applications/Slack.app", name:"Slack", hidden:true}'
 osascript -e 'tell application "System Events" to make new login item at end with properties {path:"/Applications/Spectacle.app", name:"Spectacle", hidden:true}'

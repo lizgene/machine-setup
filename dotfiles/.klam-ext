@@ -1,0 +1,13 @@
+---
+# Set duration to <1 hour to enable IAM access
+staging:
+  project:  typekit
+  env:      stage
+  policy:   administrator_and_support
+  duration: 42000
+
+production:
+  project:  typekit
+  env:      prod
+  policy:   administrator_and_support
+  duration: 42000
